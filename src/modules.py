@@ -16,6 +16,7 @@ print(str(sys.argv))
 
 for args in sys.argv:
     print(args)
+
 2# Print out the OS platform you're using:
 # YOUR CODE HERE
 print(sys.platform)
