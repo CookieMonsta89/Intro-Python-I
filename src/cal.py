@@ -22,3 +22,21 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+x = input('Enter date: MM/YYYY: ')
+month = datetime.today().month
+
+
+def calendar_toy_project(y):
+    if len(y) == 0:
+        print(calendar.TextCalendar().formatmonth(2019, month))
+    elif 1 <= len(y) <= 2:
+        print(calendar.TextCalendar().formatmonth(2019, int(y)))
+    else:
+        userInput = x.split('/')
+        date = userInput[0]
+        year = userInput[1]
+        print(calendar.TextCalendar().formatmonth(int(year), int(date)))
+
+
+calendar_toy_project(x)
